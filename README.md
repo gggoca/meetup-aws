@@ -1,2 +1,3 @@
 # meetup-aws
-Example app for meetup purpose
+
+Five lambdas which have diferent triggers

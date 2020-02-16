@@ -9,9 +9,9 @@
   "author": "Gordana Gardic",
   "license": "ISC",
   "repository": {
-        "type": "git",
-        "url": "https://github.com/gggoca/meetup-aws.git"
-    },
+    "type": "git",
+    "url": "https://github.com/gggoca/meetup-aws.git"
+  },
   "dependencies": {
     "@types/node": "^13.7.1",
     "serverless": "^1.63.0"

@@ -1,5 +1,5 @@
 service: meetup_aws
-app: meetup_aws-app
+app: meetup_aws
 org: gggoca
 
 provider:
