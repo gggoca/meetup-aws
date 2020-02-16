@@ -1,6 +1,4 @@
 service: meetup_aws
-app: meetup_aws
-org: gggoca
 
 provider:
   name: aws
