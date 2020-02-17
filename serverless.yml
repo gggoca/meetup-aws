@@ -1,4 +1,4 @@
-service: meetup_aws
+service: meetup-aws
 
 provider:
   name: aws
@@ -35,9 +35,11 @@ functions:
   sqs-triggered-lambda:
     handler: lambdas/sqs-triggered-lambda.HelloYou
     events:
-     - sqs:
-         arn: arn:aws:sqs:region:XXXXXX:meetup-queue
-         batchSize: 1
+      - sqs:
+          arn:
+            Fn::GetAtt:
+              - MeetupQueue
+              - Arn
     description: Lambda triggered by SQS message
   # lambda without trigger
   just-lambda:
@@ -53,7 +55,7 @@ resources:
     MeetupBucket:
       Type: AWS::S3::Bucket
       Properties:
-        BucketName: meetup-bucket
+        BucketName: meetup-bucket-${self:custom.user}
         PublicAccessBlockConfiguration:
           BlockPublicAcls: true
           BlockPublicPolicy: true
@@ -62,10 +64,7 @@ resources:
     MeetupQueue:
       Type: AWS::SQS::Queue
       Properties:
-        QueueName: meetup-queue
-        RedrivePolicy:
-          deadLetterTargetArn: !GetAtt MeetupQueueDeadLetter.Arn
-          maxReceiveCount: 3    
+        QueueName: meetup-queue-${self:custom.user}
 # maybe expande to this but focus on lambdas
 #stepFunctions:
   #stateMachines:
