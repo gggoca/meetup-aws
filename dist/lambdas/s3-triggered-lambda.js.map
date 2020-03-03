@@ -1,1 +1,0 @@
-{"version":3,"file":"s3-triggered-lambda.js","sourceRoot":"","sources":["../../lambdas/s3-triggered-lambda.ts"],"names":[],"mappings":";;;;;;;;;;;AAAa,QAAA,QAAQ,GAAG,GAAS,EAAE;IACjC,OAAO,CAAC,GAAG,CAAC,+CAA+C,CAAC,CAAC;IAC7D,OAAO,sBAAsB,CAAA;AAC/B,CAAC,CAAA,CAAA"}
