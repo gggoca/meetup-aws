@@ -1,24 +1,37 @@
 {
-  "name": "meetup_aws",
-  "version": "1.0.0",
-  "description": "Sample project for meetup",
-  "main": "index.js",
-  "scripts": {
-    "test": "test"
-  },
-  "author": "Gordana Gardic",
-  "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gggoca/meetup-aws.git"
-  },
-  "dependencies": {
-    "@types/aws-lambda": "^8.10.19",
-    "serverless": "^1.63.0"
-  },
-  "devDependencies": {
-    "@types/node": "^13.7.1",
-    "serverless-plugin-typescript": "^1.1.9",
-    "typescript": "^3.7.2"
-  }
+    "name": "meetup_aws",
+    "version": "1.0.0",
+    "description": "Sample project for meetup",
+    "main": "index.js",
+    "scripts": {
+        "build": "tsc",
+        "deploy": "rm -rf dist/ && npm run build && sls deploy",
+        "test": "jest --coverage --projects ./jest.config.js"
+    },
+    "author": "Gordana Gardic",
+    "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/gggoca/meetup-aws.git"
+    },
+    "dependencies": {
+        "@types/aws-lambda": "^8.10.19",
+        "serverless": "^1.63.0"
+    },
+    "devDependencies": {
+        "@types/jest": "^24.9.1",
+        "@types/node": "^13.7.7",
+        "jest": "^24.9.0",
+        "jest-sonar-reporter": "^2.0.0",
+        "serverless-plugin-typescript": "^1.1.9",
+        "standard-version": "^7.0.1",
+        "ts-jest": "^24.3.0",
+        "ts-loader": "^6.2.1",
+        "ts-node": "^8.5.4",
+        "tsconfig-paths": "^3.9.0",
+        "tslint": "^5.20.1",
+        "tslint-config-prettier": "^1.18.0",
+        "tslint-sonarts": "^1.9.0",
+        "typescript": "^3.8.3"
+    }
 }

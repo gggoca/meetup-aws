@@ -13,7 +13,7 @@ custom:
 functions:
   # lambda with api as trigger
   api-triggered-lambda:
-    handler: lambdas/api-triggered-lambda.HelloYou
+    handler: dist/lambdas/api-triggered-lambda.HelloYou
     events:
       - http:
           path: HelloYou
@@ -21,7 +21,7 @@ functions:
     description: Lambda triggered by api gateway
   # lambda with s3 as trigger
   s3-triggered-lambda:
-    handler: lambdas/s3-triggered-lambda.HelloYou
+    handler: dist/lambdas/s3-triggered-lambda.HelloYou
     events:
       - existingS3: 
          bucket: MeetupBucket
@@ -33,7 +33,7 @@ functions:
     description: Lambda triggered by placing file into S3
   # lambda with SQS as trigger
   sqs-triggered-lambda:
-    handler: lambdas/sqs-triggered-lambda.HelloYou
+    handler: dist/lambdas/sqs-triggered-lambda.HelloYou
     events:
       - sqs:
           arn:
@@ -43,11 +43,11 @@ functions:
     description: Lambda triggered by SQS message
   # lambda without trigger
   just-lambda:
-    handler: lambdas/just-lambda.HelloYou
+    handler: dist/lambdas/just-lambda.HelloYou
     description: Lambda without trigger
   # lambda with input
   with-input-lambda:
-    handler: lambdas/with-input-lambda.HelloYou
+    handler: dist/lambdas/with-input-lambda.HelloYou
     descripton: Lambda taht requires input
 
 resources:

@@ -1,0 +1,1 @@
+{"version":3,"file":"sqs-triggered-lambda.js","sourceRoot":"","sources":["../../lambdas/sqs-triggered-lambda.ts"],"names":[],"mappings":";;;;;;;;;;;AAAA;EACE;AACW,QAAA,QAAQ,GAAG,GAAS,EAAE;IACjC,OAAO,CAAC,GAAG,CAAC,+CAA+C,CAAC,CAAC;IAC7D,OAAO,sBAAsB,CAAA;AAC/B,CAAC,CAAA,CAAA"}

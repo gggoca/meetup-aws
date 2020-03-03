@@ -1,4 +1,12 @@
-export const HelloYou = async () => {
-  console.log('Hello you! I am lambda! Nice to meet you. :D ');
-  return 'Nothing to see here.'
+function getRandomInt(max:number) {
+  return Math.floor(Math.random() * Math.floor(max));
+}
+export const HelloYou = () => {
+
+  let a = getRandomInt(50);
+  let b = getRandomInt(50);
+  let result = a + b;
+  console.log(a, b, result);
+  console.log('Hello you! I am lambda! Returning sum of two random numbers. :D ');
+  return result;
 }
