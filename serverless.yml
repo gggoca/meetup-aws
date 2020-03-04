@@ -10,6 +10,17 @@ provider:
 custom:
   user: ${env:USER, 'gggoca'}
 
+iamRoleStatements:
+- Effect: 'Allow'
+      Action:
+        - s3:DeleteObject
+        - s3:GetObject
+        - s3:PutObject
+        - s3:GetBucketNotification
+        - s3:PutBucketNotification
+        - lambda:InvokeFunction
+      Resource:
+        - arn:aws:s3:::meetup-bucket-${self:custom.user}.MeetupBucket/*
 functions:
   # lambda with api as trigger
   api-triggered-lambda:

@@ -1,6 +1,6 @@
 import * as func from '../../lambdas/just-lambda';
 
-test('adds 1 + 2 to equal 3', () => {
-    expect(func.HelloYou()).toBeLessThan(100);
+test('Randome number sum less then 100', async () => {
+    expect(await func.HelloYou()).toBeLessThan(100);
 });
 

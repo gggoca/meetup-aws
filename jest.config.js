@@ -24,7 +24,8 @@ module.exports = {
   testPathIgnorePatterns: [
     '<rootDir>/node_modules/',
     '<rootDir>/functions/',
-    '<rootDir>/*.module.ts'
+    '<rootDir>/*.module.ts',
+    '<rootDir>/dist/'
   ],
   testResultsProcessor: 'jest-sonar-reporter'
 };

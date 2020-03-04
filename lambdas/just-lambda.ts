@@ -1,7 +1,8 @@
 function getRandomInt(max:number) {
   return Math.floor(Math.random() * Math.floor(max));
 }
-export const HelloYou = () => {
+
+export const HelloYou = async () => {
 
   let a = getRandomInt(50);
   let b = getRandomInt(50);

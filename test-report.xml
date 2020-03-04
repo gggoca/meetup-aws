@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
-  <file path="/mnt/d/Exercise/meetup-aws/__tests__/unit/just-lambda.test.ts">
-    <testCase name="adds 1 + 2 to equal 3" duration="7"/>
-  </file>
   <file path="/mnt/d/Exercise/meetup-aws/__tests__/unit/with-input-lambda.ts">
-    <testCase name="adds 1 + 2 to equal 3" duration="7"/>
+    <testCase name="Sum of two numbers" duration="7"/>
+  </file>
+  <file path="/mnt/d/Exercise/meetup-aws/__tests__/unit/just-lambda.test.ts">
+    <testCase name="Randome number sum less then 100" duration="6"/>
   </file>
 </testExecutions>
