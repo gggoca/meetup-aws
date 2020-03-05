@@ -6,12 +6,8 @@ provider:
 
   stage: ${self:custom.user}
   region: eu-west-1
-
-custom:
-  user: ${env:USER, 'gggoca'}
-
-iamRoleStatements:
-- Effect: 'Allow'
+  iamRoleStatements:
+    - Effect: 'Allow'
       Action:
         - s3:DeleteObject
         - s3:GetObject
@@ -21,6 +17,11 @@ iamRoleStatements:
         - lambda:InvokeFunction
       Resource:
         - arn:aws:s3:::meetup-bucket-${self:custom.user}.MeetupBucket/*
+
+custom:
+  user: ${env:USER, 'gggoca'}
+
+
 functions:
   # lambda with api as trigger
   api-triggered-lambda:
