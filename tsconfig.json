@@ -7,7 +7,9 @@
     "declaration": true,
     "outDir": "dist",
     "sourceMap": true,
-    "experimentalDecorators": true
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true
   },
   "include": ["**/*"],
   "exclude": ["node_modules", "**/*.spec.ts","dist"]

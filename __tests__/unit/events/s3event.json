@@ -1,0 +1,39 @@
+{
+  "Records": [
+    {
+      "eventVersion": "2.1",
+      "eventSource": "aws:s3",
+      "awsRegion": "eu-west-1",
+      "eventTime": "2020-03-05T09: 30: 30.667Z",
+      "eventName": "ObjectCreated:Put",
+      "userIdentity": {
+        "principalId": ""
+      },
+      "requestParameters": {
+        "sourceIPAddress": ""
+      },
+      "responseElements": {
+        "x-amz-request-id": "",
+        "x-amz-id-2": ""
+      },
+      "s3": {
+        "object": {
+          "key": "",
+          "size": 0,
+          "eTag": "",
+          "versionId": "",
+          "sequencer": ""
+        },
+        "s3SchemaVersion": "",
+        "configurationId": "",
+        "bucket": {
+          "name": "",
+          "ownerIdentity": {
+            "principalId": ""
+          },
+          "arn": ""
+        }
+      }
+    }
+  ]
+}

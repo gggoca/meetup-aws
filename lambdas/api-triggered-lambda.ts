@@ -1,19 +1,14 @@
 'use strict';
+import { HttpUtils } from "../utils/httpUtils";
+import { APIGatewayEvent } from "aws-lambda";
 
-export const HelloYou = async (event: any) => {
+export const HelloYou = async (event: APIGatewayEvent) => {
+ 
+  let getInput = event.body !== null ? JSON.parse(event.body) : "" ;
+  let a:number = getInput.a
+  let b:number = getInput.b
+  let c = a+b;
 
-  console.log("Headers", event.headers);
-  let result = {
-    statusCode: 200,
-    body: JSON.stringify(
-      {
-        message: 'Hello you! I am lambda! Nice to meet you. :D ',
-        input: event
-      },
-      null,
-      2
-    ),
-  };
-  console.log("TEST GOCA", result);
-  return result;
+  let result = HttpUtils.createOkResponse(event,c);
+  return  result ;
 };
