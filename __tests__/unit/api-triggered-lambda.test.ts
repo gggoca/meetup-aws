@@ -4,9 +4,8 @@ let data = require('./events/apigateway.json');
 
 test('Sum of two numbers', async () => {
   let Records: APIGatewayEvent = data;
-  //let res = JSON.stringify(Records);
   let result = await func.HelloYou(Records);
-  console.log(JSON.parse(result.body).result);
+  //console.log(JSON.parse(result.body).result);
 
   expect(JSON.parse(result.body).result).toBe(2);
 });

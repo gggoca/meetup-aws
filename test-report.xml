@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
+  <file path="/mnt/d/Exercise/meetup-aws/__tests__/unit/with-input-lambda.test.ts">
+    <testCase name="Sum of two numbers" duration="5"/>
+  </file>
+  <file path="/mnt/d/Exercise/meetup-aws/__tests__/unit/api-triggered-lambda.test.ts">
+    <testCase name="Sum of two numbers" duration="6"/>
+  </file>
+  <file path="/mnt/d/Exercise/meetup-aws/__tests__/unit/sqs-triggered-lambda.test.ts">
+    <testCase name="Sum of two numbers" duration="5"/>
+  </file>
   <file path="/mnt/d/Exercise/meetup-aws/__tests__/unit/just-lambda.test.ts">
     <testCase name="Randome number sum less then 100" duration="6"/>
   </file>
-  <file path="/mnt/d/Exercise/meetup-aws/__tests__/unit/with-input-lambda.test.ts">
-    <testCase name="Sum of two numbers" duration="4"/>
-  </file>
   <file path="/mnt/d/Exercise/meetup-aws/__tests__/unit/s3-triggered-lambda.test.ts">
-    <testCase name="Sum of two numbers" duration="5"/>
-  </file>
-  <file path="/mnt/d/Exercise/meetup-aws/__tests__/unit/sqs-triggered-lambda.test.ts">
-    <testCase name="Sum of two numbers" duration="3"/>
-  </file>
-  <file path="/mnt/d/Exercise/meetup-aws/__tests__/unit/api-triggered-lambda.test.ts">
     <testCase name="Sum of two numbers" duration="4"/>
   </file>
 </testExecutions>

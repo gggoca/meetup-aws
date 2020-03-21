@@ -2,11 +2,11 @@ import { S3CreateEvent } from 'aws-lambda';
 
 export const HelloYou = async (event: S3CreateEvent) => {
   for (let i: number = 0; event.Records && i < event.Records.length; i++) {
-    console.log(event);
+    //console.log(event);
     let record = event.Records[i];
 
     if (record.eventName.startsWith('ObjectCreated:')) {
-      console.log("1234");
+      //console.log("1234");
       let a: number = 7;
       let b: number = 5;
       return a + b;
