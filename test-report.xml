@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
-  <file path="/mnt/d/Exercise/meetup-aws/__tests__/unit/with-input-lambda.test.ts">
-    <testCase name="Sum of two numbers" duration="5"/>
+  <file path="/mnt/d/Exercise/meetup-aws/__tests__/automation/lambda/api-triggered-lambda.test.ts">
+    <testCase name="API triggered lambda Lambda should return 12" duration="1827"/>
   </file>
-  <file path="/mnt/d/Exercise/meetup-aws/__tests__/unit/api-triggered-lambda.test.ts">
-    <testCase name="Sum of two numbers" duration="6"/>
+  <file path="/mnt/d/Exercise/meetup-aws/__tests__/automation/lambda/with-input-lambda.test.ts">
+    <testCase name="Just lambda Lambda should return 12" duration="2476"/>
   </file>
-  <file path="/mnt/d/Exercise/meetup-aws/__tests__/unit/sqs-triggered-lambda.test.ts">
-    <testCase name="Sum of two numbers" duration="5"/>
+  <file path="/mnt/d/Exercise/meetup-aws/__tests__/automation/lambda/sqs-triggered-lambda.test.ts">
+    <testCase name="S3 triggered lambda Lambda should return 12" duration="2504"/>
   </file>
-  <file path="/mnt/d/Exercise/meetup-aws/__tests__/unit/just-lambda.test.ts">
-    <testCase name="Randome number sum less then 100" duration="6"/>
+  <file path="/mnt/d/Exercise/meetup-aws/__tests__/automation/lambda/s3-triggered-lambda.test.ts">
+    <testCase name="S3 triggered lambda Lambda should return 12" duration="2441"/>
   </file>
-  <file path="/mnt/d/Exercise/meetup-aws/__tests__/unit/s3-triggered-lambda.test.ts">
-    <testCase name="Sum of two numbers" duration="4"/>
+  <file path="/mnt/d/Exercise/meetup-aws/__tests__/automation/lambda/just-lambda.test.ts">
+    <testCase name="Just lambda Lambda should return number less the 100" duration="2483"/>
   </file>
 </testExecutions>

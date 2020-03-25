@@ -19,7 +19,7 @@ provider:
         - arn:aws:s3:::meetup-bucket-${self:custom.user}.MeetupBucket/*
 
 custom:
-  user: ${env:USER, 'gggoca'}
+  user: ${env:USER, 'levi9'}
 
 
 functions:
@@ -77,6 +77,7 @@ resources:
       Type: AWS::SQS::Queue
       Properties:
         QueueName: meetup-queue-${self:custom.user}
-# maybe expande to this but focus on lambdas
+
+# this is dummy app do not expect miracles 
 #stepFunctions:
   #stateMachines:

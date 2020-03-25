@@ -5,7 +5,7 @@ const options = new Options(
   /* secretKey    */ process.env.AWS_SECRET_ACCESS_KEY,
   /* sessionToken */ process.env.AWS_SESSION_TOKEN
 );
- //let inputFile = require("./../../unit/events/s3event.json");
+
 describe('S3 triggered lambda', () => {
 const aws = new Aws(options);
 test('Lambda should return 12', async () => {
