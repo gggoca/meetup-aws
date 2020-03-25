@@ -9,12 +9,11 @@ const options = new Options(
 describe('Just lambda', () => {
 const aws = new Aws(options);
 test('Lambda should return number less the 100', async () => {
-  await aws.command('lambda invoke --function-name meetup-aws-gggoca-just-lambda --payload {} --log-type Tail test_outputs/outputfiles4.json').then(function (data) {
+  await aws.command('lambda invoke --function-name meetup-aws-levi9-just-lambda --payload {} --log-type Tail test_outputs/outputfiles4.json').then(function (data) {
 
   let output = require('./../../../test_outputs/outputfiles4.json');
 
   let sc = output
-console.log(sc)
   expect(sc).toBeLessThan(100);
 
 });

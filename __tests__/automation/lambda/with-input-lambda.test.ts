@@ -9,7 +9,7 @@ const options = new Options(
 describe('Just lambda', () => {
 const aws = new Aws(options);
 test('Lambda should return 12', async () => {
-  await aws.command('lambda invoke --function-name meetup-aws-gggoca-with-input-lambda --payload file://__tests__/unit/events/lambda-input.json --log-type Tail test_outputs/outputfiles5.json').then(function (data) {
+  await aws.command('lambda invoke --function-name meetup-aws-levi9-with-input-lambda --payload file://__tests__/unit/events/lambda-input.json --log-type Tail test_outputs/outputfiles5.json').then(function (data) {
 
   let output = require('./../../../test_outputs/outputfiles5.json');
 

@@ -9,7 +9,7 @@ const options = new Options(
 describe('API triggered lambda', () => {
 const aws = new Aws(options);
 test('Lambda should return 12', async () => {
-  await aws.command('lambda invoke --function-name meetup-aws-gggoca-api-triggered-lambda --payload file://__tests__/unit/events/apigateway.json --log-type Tail test_outputs/outputfile.json').then(function (data) {
+  await aws.command('lambda invoke --function-name meetup-aws-levi9-api-triggered-lambda --payload file://__tests__/unit/events/apigateway.json --log-type Tail test_outputs/outputfile.json').then(function (data) {
   //console.log('data = ', data);
   let output = require('./../../../test_outputs/outputfile.json');
 

@@ -1,7 +1,10 @@
 export const HelloYou = async (event: any) => {
-  const result = event.a + event.b;
-  //console.log(event.a, event.b, result);
-  //console.log('Hello you! I am lambda! Returning sum of two provided numbers. :D ');
+  console.log(event.a);
+  console.log(typeof event.a)
+ 
+  console.log(event.b);
+  console.log(typeof event.b)
 
+  let result = event.a + event.b
   return result;
 }
