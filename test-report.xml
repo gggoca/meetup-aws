@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
-  <file path="/mnt/d/Exercise/meetup-aws/__tests__/automation/lambda/just-lambda.test.ts">
-    <testCase name="Just lambda Lambda should return number less the 100" duration="1668"/>
-  </file>
   <file path="/mnt/d/Exercise/meetup-aws/__tests__/automation/lambda/with-input-lambda.test.ts">
-    <testCase name="Just lambda Lambda should return 12" duration="6738"/>
+    <testCase name="Just lambda Lambda should return 12" duration="1563"/>
   </file>
   <file path="/mnt/d/Exercise/meetup-aws/__tests__/automation/lambda/s3-triggered-lambda.test.ts">
-    <testCase name="S3 triggered lambda Lambda should return 12" duration="6815"/>
-  </file>
-  <file path="/mnt/d/Exercise/meetup-aws/__tests__/automation/lambda/api-triggered-lambda.test.ts">
-    <testCase name="API triggered lambda Lambda should return 12" duration="6801"/>
+    <testCase name="S3 triggered lambda Lambda should return 12" duration="2056"/>
   </file>
   <file path="/mnt/d/Exercise/meetup-aws/__tests__/automation/lambda/sqs-triggered-lambda.test.ts">
-    <testCase name="S3 triggered lambda Lambda should return 12" duration="7101"/>
+    <testCase name="S3 triggered lambda Lambda should return 12" duration="2080"/>
+  </file>
+  <file path="/mnt/d/Exercise/meetup-aws/__tests__/automation/lambda/api-triggered-lambda.test.ts">
+    <testCase name="API triggered lambda Lambda should return 12" duration="2037"/>
+  </file>
+  <file path="/mnt/d/Exercise/meetup-aws/__tests__/automation/lambda/just-lambda.test.ts">
+    <testCase name="Just lambda Lambda should return number less the 100" duration="1869"/>
   </file>
 </testExecutions>
