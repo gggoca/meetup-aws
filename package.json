@@ -28,7 +28,7 @@
         "jest": "^24.9.0",
         "jest-sonar-reporter": "^2.0.0",
         "serverless-plugin-typescript": "^1.1.9",
-        "standard-version": "^7.0.1",
+        "standard-version": "^8.0.1",
         "supertest": "^4.0.2",
         "ts-jest": "^24.3.0",
         "ts-loader": "^6.2.1",
